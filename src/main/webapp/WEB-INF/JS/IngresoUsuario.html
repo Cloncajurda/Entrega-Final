@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script src="UsuarioJs.js">  </script>
+    
+        <title>Conf Bs. As.</title>
+    </head>
+    
+    <body>
+
+        <nav class="navegador superior">
+            <ul class="nav justify-content-end ">
+                <li class="nav-item">
+                    <a class="nav-link izquierda blanco" aria-current="page" href="../Index.html">La Conferencia</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link color2" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color2" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled color2" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link verde" href="CompraDeTicket.html">Comprar tickets</a>
+              </li>
+            </ul>
+        </nav>
+
+            <figure class="text-center">
+            <blockquote class="blockquote-footer">
+              <p>Registro de usuarios</p>
+            </blockquote>
+            <figcaption class="blockquote">
+              <h1>INGRESE SU USUARIO</h1>
+            </figcaption>
+        </figure>
+
+        <div class="ancho">
+            <form class="row g-2 needs-validation" action="CheckUser" method="post" novalidate>
+                <div class="col-md-4">
+                    <label for="validationNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationNombre" name="validationNombre" value="" required>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationApellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationApellido" name="validationApellido" value="" required>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDni" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="validationDni" name="validationDni" value="" required>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCorreo" class="form-label">Correo</label>
+                    <input type="text" class="form-control" id="validationCorreo" name="validationCorreo" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+                 
+
+                    <button type="Button" id="Resumen" onclick="Resumir()">Registrese </button>
+                                     
+                </div>
+
+                <p>Verifique sus datos de registro a continuacion: </p>
+                <p id="totalField" name="validationTotalNombre" ></p>
+                
+                <br>
+                <br>
+                <br>
+
+                <div class="col-12 botones">
+                    <button class="btn btn-success" type="submit">Aceptar</button>
+                    <button class="btn btn-success" type="submit">Modificar</button>
+                </div>
+
+            </form>
+        </div>
+    </body>
+<br>
+<br>
+<br>
+    <footer>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Preguntas <br>Frecuentes</a>
+                <a class="navbar-brand" href="#">Contactenos</a>
+                <a class="navbar-brand" href="#">Prensa</a>
+                <a class="navbar-brand" href="#">Conferencias</a>
+                <a class="navbar-brand" href="#">Terminos y <br>condiciones</a>
+                <a class="navbar-brand" href="#">Privacidad</a>
+                <a class="navbar-brand" href="#">Estudiantes</a>      
+            </div>
+        </nav>
+    </footer>
+    
+</html>
+
+

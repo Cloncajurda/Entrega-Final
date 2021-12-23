@@ -1,0 +1,67 @@
+.navegador {background-color: rgb(110, 89, 89);}
+.verde {color:rgb(67, 197, 67) !important;}
+.color2 {color:rgb(209, 204, 204)  !important;}
+.blanco {color:rgb(255, 255, 255)  !important;}
+
+.derecha {position: absolute;
+right: 10%;
+}
+.superior {height: 4em;}
+.izquierda {position:absolute;
+    left: 15%;
+}
+.izquierda2 {position:absolute;
+    left: 10%;
+}
+.card-img {width: 50%;
+    height: 50%;
+}
+.Justificado-izquierda {position: relative;
+    text-align: right;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.badge {margin-right: 1em;}
+
+.div.card.col {border: none;
+    padding-left: 0%;
+}
+.card {border: none;}
+.div {border: none;}
+
+div.row {width: 80%;
+margin-left: 10%;}
+
+.carousel-inner {
+    background-color: black;
+}
+
+.palacio { width: 100%;
+height: 100%;
+opacity: 50%;
+}
+
+.UNO {margin-left: 10%;
+}
+.TRES {margin-right: 10%;
+}
+.Honolulu {margin-right: 0em;
+margin-bottom: 0em;}
+
+.Conoce-mas {margin-left: 0em;
+background-color: grey;
+color: white;
+border: none;}
+
+.row {border: none;
+margin-bottom: 2em;}
+
+.col {border: none;
+padding: 0%;}
+
+.ancho {position: relative; 
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+.VerdeClaro {background-color: rgb(109, 189, 30);}

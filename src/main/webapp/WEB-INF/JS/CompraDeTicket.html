@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script src="IntegradorJs.js">  </script>
+    
+        <title>Conf Bs. As.</title>
+    </head>
+    
+    <body>
+
+        <nav class="navegador superior">
+            <ul class="nav justify-content-end ">
+              <li class="">
+                <a class="izquierda2" aria-current="page" href="#"><img src="../codoacodo.png" alt="logo Codo a Codo"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link izquierda blanco" aria-current="page" href="../Index.html">Conf Bs As</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link blanco" aria-current="page" href="../Index.html">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color2" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color2" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled color2" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link verde" href="JS/CompraDeTicket.html">Comprar tickets</a>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body UNO">
+                    <h5 class="card-title">Estudiante</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                    <p class="card-text">80%</p>
+                    <p class="card-text text-muted">* Presentar documentación</p>
+                </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body DOS">
+                    <h5 class="card-title">Trainee</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                    <p class="card-text">50%</p>
+                    <p class="card-text text-muted">* Presentar documentación</p>
+                </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body TRES">
+                    <h5 class="card-title">Junior</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                    <p class="card-text">15%</p>
+                    <p class="card-text text-muted">* Presentar documentación</p>
+                </div>
+            </div>
+        </div>
+
+        <figure class="text-center">
+            <blockquote class="blockquote-footer">
+              <p>VENTA</p>
+            </blockquote>
+            <figcaption class="blockquote">
+              <h1>VALOR DEL TICKET $200</h1>
+            </figcaption>
+        </figure>
+
+        <div class="ancho">
+            <form class="row g-2 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Correo</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+                   
+                <div class="row">
+                    <div class="col-md-6">Cantidad
+                        <input type="number" id="Cantidad" placeholder="Cantidad">
+                    </div>
+                    <div class="col-md-6">Categoria
+                        <select id="Categoria">
+                        <option Value="1" class="badge bg-warning text-dark">Estudiante</option>
+                        <option Value="2" class="badge bg-warning text-darkt">Trainee</option>
+                        <option Value="3" class="badge bg-warning text-dark">Junior</option>
+                        </select>
+                    </div>  
+                
+
+                    <button type="Button" id="Resumen" onclick="Calcular()">Total a Pagar </button>
+                    <input type="text" id="totalField" value="Usted debe pagar:" placeholder="Su pago">
+
+                </div>
+                <div class="col-12 botones">
+                    <button class="btn btn-success" type="submit">Borrar</button>
+                    <button class="btn btn-success" type="submit">Resumen</button>
+                </div>
+
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Preguntas <br>Frecuentes</a>
+                <a class="navbar-brand" href="#">Contactenos</a>
+                <a class="navbar-brand" href="#">Prensa</a>
+                <a class="navbar-brand" href="#">Conferencias</a>
+                <a class="navbar-brand" href="#">Terminos y <br>condiciones</a>
+                <a class="navbar-brand" href="#">Privacidad</a>
+                <a class="navbar-brand" href="#">Estudiantes</a>      
+            </div>
+        </nav>
+    </footer>
+    
+</html>
+
+
